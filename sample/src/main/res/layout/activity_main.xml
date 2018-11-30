@@ -10,7 +10,7 @@
         android:id="@+id/buttonBasic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_basic"
+        android:text="xxx"
         style="@style/Button"/>
 
     <Button
