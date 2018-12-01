@@ -29,7 +29,7 @@ public class BasicActivity extends BaseActivity {
         WeekViewEvent event = new WeekViewEvent(1, getEventTitle(startTime), startTime, endTime);
         event.setColor(getResources().getColor(R.color.event_color_01));
         events.add(event);
-
+/*
         startTime = Calendar.getInstance();
         startTime.set(Calendar.HOUR_OF_DAY, 3);
         startTime.set(Calendar.MINUTE, 30);
@@ -156,7 +156,7 @@ public class BasicActivity extends BaseActivity {
         event = new WeekViewEvent(8, getEventTitle(startTime), null, startTime, endTime, true);
         event.setColor(getResources().getColor(R.color.event_color_01));
         events.add(event);
-
+*/
         return events;
     }
 
