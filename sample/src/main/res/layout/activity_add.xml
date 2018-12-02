@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,8 +8,9 @@
     tools:context=".AddActivity">
 
     <LinearLayout
+        android:id="@+id/setTimeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -87,7 +88,7 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/cb2"
                 style="@style/Widget.AppCompat.CompoundButton.CheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,42 +96,42 @@
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/cb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/cb4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/cb5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/cb6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/cb7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
 
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/cb8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -162,6 +163,33 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btnSetDay"
+                android:layout_toStartOf="@+id/btnSetDay"
+                android:ems="10"
+                android:inputType="date" />
+
+            <Button
+                android:id="@+id/btnSetDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Ngày" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Calender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000">
+
             <Button
                 android:id="@+id/btnExit"
                 android:layout_width="wrap_content"
@@ -187,6 +215,35 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Button" />
         </RelativeLayout>
 
+
     </LinearLayout>
 
-</RelativeLayout>
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/dateButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
+</LinearLayout>
